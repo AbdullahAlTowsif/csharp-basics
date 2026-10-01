@@ -1,0 +1,34 @@
+1. git log
+--> git log --oneline
+shows me the commits in one line with their id.
+--> git log --online --graph
+shows me the commits in one line with their id and graph.
+2. git show
+--> git show <commit-id>
+shows the detailed information about specific git commit
+3. git branch
+--> git branch
+shows all the available branch
+--> git branch <new-branch-name>
+creates a new branch but leaves on my current branch
+4. git checkout
+--> git checkout <branch-name>
+switch to a branch
+--> git checkout -b <new-branch-name>
+creates a new branch and immediately switches you to it.
+5. Suppose, I created bunch of local repo/branch. Now I want to connect all my local branch with remote repo.
+--> git push -u --all origin
+6. git amend
+--> git commit --amend -m "updated message"
+to rename the last commit message
+7. git pull
+--> git pull
+downloads changes from a remote repository and immediately integrates them into your current local branch
+--> git pull origin main (git pull <remote> <branch>)
+Fetches changes from a specific remote and merges them into your current active branch.
+8. git rebase
+--> git rebase main (git rebase <branch-name>)
+A way to bring your current branch up to date with the main branch by replaying your commits on top of it.
+9. git merge
+--> git merge main
+Git takes the commits from the target branch (e.g., main) and merges them into your current branch.
